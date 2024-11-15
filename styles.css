@@ -1,0 +1,249 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del cuerpo */
+body{
+    background-color: #043c6e;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;/* Evita scroll horizontal no deseado */
+    color: #ffffff;
+}
+
+/* Secciones Principales*/
+section{
+    padding: 50px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#inicio{
+    background-color: #6b7132;
+}
+
+#sobre{
+    background-color: #a6cccc;
+}
+
+#contacto{
+    background-color: #60a85f;
+}
+
+section h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section p{
+    font-size: 1.2rem;
+}
+
+/* Títulos */
+h1{
+    font-family: 'Creepster';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5rem;
+    color: rgb(57, 201, 181);
+    text-align: center;
+    margin: 20px 0;/* Margen para separar del contenido */
+}
+
+h4{
+    margin: 5px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+span{
+    color: #60a85f;
+}
+
+
+/* Contenedor principal de personajes */
+#personajes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));/* Adaptable a pantallas pequeñas */
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#personajes div{
+    background-color:#072d4f ;/* Fondo para las tarjetas */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);/* Sombra para darle relieve */
+    padding: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;/* Animación al interactuar */
+}
+
+#personajes div:hover{
+    transform: translateY(-5px);/* Efecto de levitación */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);/* Sombra más marcada */
+
+}
+
+/* Imágenes */
+#personajes img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.interactive-button {
+    background-color:#3498db ;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animació suave*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);/* Sombra inicial*/
+}
+
+/*Efecto al pasar el mouse*/
+.interactive-button:hover{
+    transform: translateY(-3px);/* Sube ligeramente*/
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.8);/* Sombra más pronunciada*/
+}
+
+/*Efecto al hacer clic*/
+.interactive-button:hover{
+    transform: translateY(1px);/* Baja ligeramente*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);/* Regresa a la Sombra inicial*/ ;
+}
+
+/* Centrado del contenedor*/
+.container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+/* Estilos para el parrafo */
+.mensaje-final{
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.5rem;
+    color:#f0f0f0;
+    background-color: rgba(5, 105, 13, 0.945) ;
+    padding: 10px;
+    border-radius: 10px ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 600px;
+}
+
+.footer{
+    
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-links{
+    margin: 10;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: #57c7b8;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover{
+    color: #60a85f;
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width:768px){
+    h1 {
+        font-size: 2.5rem;/* Reduce el tamaño del título */
+    }
+
+    h4 {
+        font-size: 0.9rem;/* Ajusta el tamaño del texto */
+    }
+
+    #personajes {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .mensaje-final{
+        font-size: 1rem;
+        padding: 8px;
+        margin: 10px auto;
+    }
+
+    .footer-links{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Responsividad para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem; /* Título más pequeño */
+    }
+    
+    #personajes {
+        gap: 10px;
+    }
+
+    #personajes div {
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
