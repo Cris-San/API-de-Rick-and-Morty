@@ -34,6 +34,6 @@ Este proyecto es una práctica interactiva para consumir una API y mostrar datos
 
 ## 📫 Contacto
 
-🌐 LinkedIn: Yuber Cristian Sánchez Ospina
-🐙 GitHub: Cris-San
+🌐 LinkedIn: [Yuber Cristian Sánchez Ospina](https://www.linkedin.com/in/yubercristiansanchezospina/)
+🐙 GitHub: https://github.com/Cris-San
 ✉️ Email: cris629.cso@gmail.com
